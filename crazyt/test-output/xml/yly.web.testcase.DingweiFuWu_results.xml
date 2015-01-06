@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="定位服务页面功能测试"
+           tests="3"
+           failures="1"
+           errors="0"
+           skipped="0"
+           time="21.533">
+  <properties />
+            <testcase name="dragBar" time="0.076" classname="yly.web.testcase.DingweiFuWu">
+                <failure type="org.openqa.selenium.interactions.MoveTargetOutOfBoundsException"
+                  message="Offset within element cannot be scrolled into view: (0, 0): [object HTMLSpanElement]
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;
+System info: host: &apos;e6-56&apos;, ip: &apos;192.168.0.56&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;
+Session ID: f9ddacf3-0a8e-461d-999a-f1967f5e3d40
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]"
+              >
+<![CDATA[org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object HTMLSpanElement]
+Command duration or timeout: 12 milliseconds
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'e6-56', ip: '192.168.0.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_65'
+Session ID: f9ddacf3-0a8e-461d-999a-f1967f5e3d40
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]
+  sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+  sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:526)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteExecuteMethod.execute(RemoteExecuteMethod.java:34)
+  org.openqa.selenium.remote.RemoteMouse.mouseMove(RemoteMouse.java:88)
+  org.openqa.selenium.support.events.internal.EventFiringMouse.mouseMove(EventFiringMouse.java:58)
+  org.openqa.selenium.interactions.MoveMouseAction.perform(MoveMouseAction.java:35)
+  org.openqa.selenium.interactions.CompositeAction.perform(CompositeAction.java:31)
+  org.openqa.selenium.interactions.Actions.perform(Actions.java:367)
+  crazy.seleiumTools.WebTools.dragAndDrop(WebTools.java:218)
+  yly.web.Page.DingWeiPage.dragbar(DingWeiPage.java:93)
+  yly.web.testcase.DingweiFuWu.dragBar(DingweiFuWu.java:33)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+  java.lang.reflect.Method.invoke(Method.java:606)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Offset within element cannot be scrolled into view: (0, 0): [object HTMLSpanElement]
+Build info: version: '2.44.0', revision: '76d78cf323ce037c5f92db6c1bba601c2ac43ad8', time: '2014-10-23 13:11:40'
+System info: host: 'e6-56', ip: '192.168.0.56', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_65'
+Driver info: driver.version: unknown
+  <anonymous class>.FirefoxDriver.prototype.mouseMoveTo(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5975445667517836579webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9951:19)
+  <anonymous class>.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5975445667517836579webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:16)
+  <anonymous class>.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5975445667517836579webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)
+  <anonymous class>.DelayedCommand.prototype.execute/<(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous5975445667517836579webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+            <testcase name="seeCar" time="8.307" classname="yly.web.testcase.DingweiFuWu" />
+                <testcase name="findMycarByframe" time="13.150" classname="yly.web.testcase.DingweiFuWu" />
+      
+</testsuite>

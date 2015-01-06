@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="功能测试">
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<!-- <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/> -->
+	</listeners>
+	
+		<test verbose="2" name="统计报表全功能测试">
+		<packages>
+			<package name="yly.web.testcase.tongji.odo" ></package>
+		</packages>
+	</test>
+	
+	
+	
+	
+
+<!-- 	<test verbose="2" name="正向功能测试">
+
+		<classes>
+			<class name="yly.web.testcase.DingweiFuWu" />
+		</classes>
+	</test> -->
+
+
+</suite> <!-- Default suite -->
+
+

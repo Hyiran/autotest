@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - 统计报表功能测试1</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script src="jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>统计报表功能测试1</h1>
+<p>
+  Test duration: 91.514s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.DingweiFuWu</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  toDingWei
+      </td>
+  
+  
+  <td class="duration">
+    37.498s
+  </td>
+  
+  
+  <td class="result">
+	     <span class="methodDescription" onclick="methodDescriptionclick('toDingWei')">-----方法无描述-----</span><br/>   
+            
+    
+            <div id=toDingWei class="testOutput"  style="display: none;">
+                        2014-12-01 18:46:41=&gt;点击：位置服务<br />
+                                2014-12-01 18:46:42=&gt;点击：定位服务<br />
+                                2014-12-01 18:46:45=&gt;跳转到新页面：定位服务-易流云平台<br />
+                                2014-12-01 18:46:47=&gt;New page title is:定位服务-易流云平台<br />
+                                2014-12-01 18:46:47=&gt;从下拉菜单选择图吧地图<br />
+                                2014-12-01 18:46:47=&gt;移动鼠标到[选择地图类菜单]中心后点击，鼠标悬停，随后找到[图吧地图]点击<br />
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Must provide a location for a move action.</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:30)<br />
+              org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:251)<br />
+              crazy.seleiumTools.WebBasicPage.hovermouseFornewElementThenClick(WebBasicPage.java:510)<br />
+              yly.web.Page.DingWeiPage.selectMapBar(DingWeiPage.java:128)<br />
+              yly.web.testcase.DingweiFuWu.toDingWei(DingweiFuWu.java:19)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable" width="100%">
+    <tr><th colspan="3" class="header skipped">Skipped Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.DingweiFuWu</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  dragBar
+      </td>
+  
+  
+  <td class="duration">
+    0.001s
+  </td>
+  
+  
+  <td class="result">
+	     <span class="methodDescription" onclick="methodDescriptionclick('dragBar')">-----方法无描述-----</span><br/>   
+                                 <i>Depends on method(s): </i>
+        <span class="dependency">yly.web.testcase.DingweiFuWu.findMycarByframe</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  findMycarByframe
+      </td>
+  
+  
+  <td class="duration">
+    0.000s
+  </td>
+  
+  
+  <td class="result">
+	     <span class="methodDescription" onclick="methodDescriptionclick('findMycarByframe')">-----方法无描述-----</span><br/>   
+                                 <i>Depends on method(s): </i>
+        <span class="dependency">yly.web.testcase.DingweiFuWu.seeCar</span>
+                
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="定位服务页面点击树目录中任意车辆，检查在列表和 地图终会是否出现车辆信息">seeCar</span><br/>   
+      </td>
+  
+  
+  <td class="duration">
+    0.001s
+  </td>
+  
+  
+  <td class="result">
+	      <span class="methodDescription" onclick="methodDescriptionclick('seeCar')">定位服务页面点击树目录中任意车辆，检查在列表和 地图终会是否出现车辆信息</span><br/>     
+                                 <i>Depends on method(s): </i>
+        <span class="dependency">yly.web.testcase.DingweiFuWu.toDingWei</span>
+                
+    
+        
+
+      </td>
+</tr>
+      </table>
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.TongTiBaoBiao</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  <span class="description" title="头架分离明细">seeTouJiaFenLiMingXi</span><br/>   
+      </td>
+  
+  
+  <td class="duration">
+    20.901s
+  </td>
+  
+  
+  <td class="result">
+	      <span class="methodDescription" onclick="methodDescriptionclick('seeTouJiaFenLiMingXi')">头架分离明细</span><br/>     
+            
+    
+            <div id=seeTouJiaFenLiMingXi class="testOutput"  style="display: none;">
+                        2014-12-01 18:45:59=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[头架分离明细]点击<br />
+                                2014-12-01 18:46:04=&gt;跳转到新页面：易流云平台<br />
+                                2014-12-01 18:46:09=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[头架分离明细]点击<br />
+                                2014-12-01 18:46:10=&gt;跳转到新页面：易流云平台<br />
+                                2014-12-01 18:46:12=&gt;New page title is:易流云平台<br />
+                                2014-12-01 18:46:13=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-12-01 18:46:13=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-12-01 18:46:14=&gt;点击：关闭其他<br />
+                                2014-12-01 18:46:14=&gt;设置开始时间<br />
+                                2014-12-01 18:46:14=&gt;点击：开始时间<br />
+                                2014-12-01 18:46:15=&gt;点击：月编辑框<br />
+                                2014-12-01 18:46:15=&gt;清空; 在输入: 6<br />
+                                2014-12-01 18:46:16=&gt;点击：年编辑框<br />
+                                2014-12-01 18:46:16=&gt;清空; 在输入: 2014<br />
+                                2014-12-01 18:46:16=&gt;日期设置为：1<br />
+                                2014-12-01 18:46:16=&gt;设置结束时间<br />
+                                2014-12-01 18:46:16=&gt;点击：结束时间<br />
+                                2014-12-01 18:46:17=&gt;点击：月编辑框<br />
+                                2014-12-01 18:46:17=&gt;清空; 在输入: 6<br />
+                                2014-12-01 18:46:17=&gt;点击：年编辑框<br />
+                                2014-12-01 18:46:17=&gt;清空; 在输入: 2014<br />
+                                2014-12-01 18:46:17=&gt;日期设置为：30<br />
+                                2014-12-01 18:46:17=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeZhiLingMingXi
+      </td>
+  
+  
+  <td class="duration">
+    8.671s
+  </td>
+  
+  
+  <td class="result">
+	     <span class="methodDescription" onclick="methodDescriptionclick('seeZhiLingMingXi')">-----方法无描述-----</span><br/>   
+            
+    
+            <div id=seeZhiLingMingXi class="testOutput"  style="display: none;">
+                        2014-12-01 18:46:20=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[指令明细]点击<br />
+                                2014-12-01 18:46:22=&gt;跳转到新页面：易流云平台<br />
+                                2014-12-01 18:46:23=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-12-01 18:46:23=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-12-01 18:46:24=&gt;点击：关闭其他<br />
+                                2014-12-01 18:46:24=&gt;设置开始时间<br />
+                                2014-12-01 18:46:24=&gt;点击：开始时间<br />
+                                2014-12-01 18:46:24=&gt;点击：月编辑框<br />
+                                2014-12-01 18:46:24=&gt;清空; 在输入: 6<br />
+                                2014-12-01 18:46:24=&gt;点击：年编辑框<br />
+                                2014-12-01 18:46:24=&gt;清空; 在输入: 2014<br />
+                                2014-12-01 18:46:25=&gt;日期设置为：1<br />
+                                2014-12-01 18:46:25=&gt;设置结束时间<br />
+                                2014-12-01 18:46:25=&gt;点击：结束时间<br />
+                                2014-12-01 18:46:25=&gt;点击：月编辑框<br />
+                                2014-12-01 18:46:25=&gt;清空; 在输入: 6<br />
+                                2014-12-01 18:46:25=&gt;点击：年编辑框<br />
+                                2014-12-01 18:46:26=&gt;清空; 在输入: 2014<br />
+                                2014-12-01 18:46:26=&gt;日期设置为：30<br />
+                                2014-12-01 18:46:26=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

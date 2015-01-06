@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - 统计报表功能测试</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>统计报表功能测试</h1>
+<p>
+  Test duration: 480.018s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.TongTiBaoBiao</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  seeCaoZuoRiZhi
+      </td>
+  <td class="duration">
+    10.185s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.NullPointerException</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              yly.web.Page.TongJiBaoBiaoPage.closeOtherTab(TongJiBaoBiaoPage.java:35)<br />
+              yly.web.testcase.TongTiBaoBiao.seeCaoZuoRiZhi(TongTiBaoBiao.java:252)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeChaoWenHuiZong
+      </td>
+  <td class="duration">
+    1.141s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Must provide a location for a move action.</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:30)<br />
+              org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:251)<br />
+              crazy.seleiumTools.WebBasicPage.hovermouseFornewElementThenClick(WebBasicPage.java:475)<br />
+              yly.web.Page.MainMenuPage.toSubMenuPage(MainMenuPage.java:67)<br />
+              yly.web.testcase.TongTiBaoBiao.seeChaoWenHuiZong(TongTiBaoBiao.java:153)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeChaoWenMingXi
+      </td>
+  <td class="duration">
+    1.226s
+  </td>
+  <td class="result">
+        
+    
+        
+
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Must provide a location for a move action.</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.interactions.MoveMouseAction.&lt;init&gt;(MoveMouseAction.java:30)<br />
+              org.openqa.selenium.interactions.Actions.moveToElement(Actions.java:251)<br />
+              crazy.seleiumTools.WebBasicPage.hovermouseFornewElementThenClick(WebBasicPage.java:475)<br />
+              yly.web.Page.MainMenuPage.toSubMenuPage(MainMenuPage.java:67)<br />
+              yly.web.testcase.TongTiBaoBiao.seeChaoWenMingXi(TongTiBaoBiao.java:163)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.TongTiBaoBiao</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  seeCheLiangJiaYouJilu
+      </td>
+  <td class="duration">
+    16.249s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:50:11===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:11===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:11===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:11===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:50:12===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:12===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:13===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:13===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeDingShiGenZong
+      </td>
+  <td class="duration">
+    9.488s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:50:25===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:25===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:50:26===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:26===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:26===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:26===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeGuaCheLaYunMingXi
+      </td>
+  <td class="duration">
+    8.506s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:50:33===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:33===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:33===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:33===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:50:34===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:34===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:35===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:35===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKaiGuanMenHuiZong
+      </td>
+  <td class="duration">
+    30.210s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:50:44===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:44===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:44===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:44===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:50:45===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:45===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:50:46===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:50:46===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKaiGuanMenMingXi
+      </td>
+  <td class="duration">
+    10.418s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:51:14===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:14===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:14===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:14===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:51:15===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:15===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:15===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:15===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKongTiaoHuiZong
+      </td>
+  <td class="duration">
+    12.763s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:51:23===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:24===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:24===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:24===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:51:25===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:25===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKongTiaoMingXi
+      </td>
+  <td class="duration">
+    11.407s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:51:38===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:38===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:38===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:38===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:51:39===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:39===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:40===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:40===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLCD_MingXi
+      </td>
+  <td class="duration">
+    9.324s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:51:47===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:47===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:48===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:48===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:51:49===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:49===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:49===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:49===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLengJiHuiZong
+      </td>
+  <td class="duration">
+    9.969s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:51:57===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:57===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:58===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:58===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:51:59===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:59===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:51:59===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:51:59===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLengJiMingXi
+      </td>
+  <td class="duration">
+    9.481s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:52:07===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:07===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:07===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:07===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:52:08===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:08===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:08===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:08===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLiChengBaoBiao
+      </td>
+  <td class="duration">
+    10.288s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:52:15===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:15===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:16===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:16===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:52:17===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:17===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:18===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:18===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLuQiaoFeiMingXi
+      </td>
+  <td class="duration">
+    8.488s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:52:26===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:26===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:26===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:26===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:52:27===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:27===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:27===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:27===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seePaiZhaoMingXi
+      </td>
+  <td class="duration">
+    20.482s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:52:46===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:46===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:46===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:46===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:52:47===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:47===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:52:48===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:52:48===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seePaiZhaoTongJi
+      </td>
+  <td class="duration">
+    6.246s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJianXingShiMingXi
+      </td>
+  <td class="duration">
+    25.099s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:53:03===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:03===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:03===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:03===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:53:04===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:04===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:05===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:05===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJinChuTongJiCheLiangHuiZong
+      </td>
+  <td class="duration">
+    13.595s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:53:27===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:27===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:27===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:27===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:53:28===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:28===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:28===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:28===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJinChuTongJiMingXi
+      </td>
+  <td class="duration">
+    13.636s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:53:41===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:41===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:41===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:41===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:53:42===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:42===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:42===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:42===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJinChuTongJiQuYuHuiZong
+      </td>
+  <td class="duration">
+    13.229s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:53:54===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:54===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:54===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:54===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:53:55===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:55===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:53:55===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:53:55===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeSiJi_IC_XingShiHuiZong
+      </td>
+  <td class="duration">
+    8.371s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:54:06===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:06===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:07===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:07===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:54:08===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:08===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:08===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:08===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeSiJi_IC_XingShiMingXi
+      </td>
+  <td class="duration">
+    8.770s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:54:15===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:15===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:15===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:15===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:54:16===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:16===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:16===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:17===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeSuDuFenXi
+      </td>
+  <td class="duration">
+    8.522s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:54:24===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:24===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:24===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:24===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:54:25===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:25===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTingCheHuiZongBiao
+      </td>
+  <td class="duration">
+    9.430s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:54:33===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:33===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:33===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:33===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:54:34===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:34===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:34===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:34===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTingCheMingXiBiao
+      </td>
+  <td class="duration">
+    37.935s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:54:43===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:43===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:43===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:43===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:54:44===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:44===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:54:44===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:54:44===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTouJiaFenLiHuiZong
+      </td>
+  <td class="duration">
+    9.539s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:55:20===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:21===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:55:21===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:21===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:55:22===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:22===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:55:22===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:22===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTouJiaFenLiMingXi
+      </td>
+  <td class="duration">
+    8.318s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:55:29===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:29===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:55:29===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:29===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:55:30===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:30===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:55:30===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:30===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeWenDudongtaimingxi
+      </td>
+  <td class="duration">
+    10.570s
+  </td>
+  <td class="result">
+        
+    
+        
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXieHuiHuiZong
+      </td>
+  <td class="duration">
+    13.472s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:55:53===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:53===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:55:53===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:53===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:55:54===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:54===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:55:54===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:55:54===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXieHuiMingXi
+      </td>
+  <td class="duration">
+    15.788s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:56:09===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:09===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:09===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:09===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:56:10===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:10===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:10===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:10===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXingShiTongJiHuiZong
+      </td>
+  <td class="duration">
+    8.263s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:56:17===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:17===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:17===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:17===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:56:18===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:18===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:18===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:18===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXingShiTongJiMingXi
+      </td>
+  <td class="duration">
+    8.185s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:56:25===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:25===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:25===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:26===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:56:26===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:26===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:27===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:27===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYeYaHuiZong
+      </td>
+  <td class="duration">
+    9.900s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:56:35===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:35===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:35===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:35===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:56:36===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:36===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:36===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:37===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYeYaMingXi
+      </td>
+  <td class="duration">
+    9.505s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:56:45===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:45===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:45===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:45===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:56:46===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:46===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:46===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:46===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYouChiPanDuanYouHaoFenXi
+      </td>
+  <td class="duration">
+    12.725s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:56:53===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:53===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:53===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:53===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:56:54===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:54===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:56:54===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:56:55===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYouLiangDongTaiBiao
+      </td>
+  <td class="duration">
+    15.494s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:57:06===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:07===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:57:07===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:07===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:57:11===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:11===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:57:11===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:12===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeZhiLingMingXi
+      </td>
+  <td class="duration">
+    17.864s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        Reporter:2014-11-26 11:57:31===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:31===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:57:31===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:31===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                                Reporter:2014-11-26 11:57:32===&gt;changing value 11 from &apos;11&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:32===&gt;changing value&nbsp; from &apos;&apos; to &apos;6&apos;<br />
+                                Reporter:2014-11-26 11:57:32===&gt;changing value 2014 from &apos;2014&apos; to &apos;&apos;<br />
+                                Reporter:2014-11-26 11:57:32===&gt;changing value&nbsp; from &apos;&apos; to &apos;2014&apos;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>

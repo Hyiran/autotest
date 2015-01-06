@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="">
+<head>
+  <title>Test Results Report - 统计报表功能测试</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<h1>统计报表功能测试</h1>
+<p>
+  Test duration: 404.098s
+</p>
+
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.TongTiBaoBiao</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  seeWenDudongtaimingxi
+      </td>
+  <td class="duration">
+    5.820s
+  </td>
+  <td class="result">
+     
+  
+    
+            <div class="testOutput" >
+			 <span id="stateBut" onclick="$use()">点击展开</span>
+			 <p id="class1content" style=" display:none;" >
+                        2014-11-26 16:24:34=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[温度动态明细]点击<br />
+                                2014-11-26 16:24:36=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:24:38=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:24:38=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:24:39=&gt;点击：关闭其他<br />
+                                2014-11-26 16:24:39=&gt;选择时间<br />
+                                2014-11-26 16:24:39=&gt;选择车辆<br />
+                                2014-11-26 16:24:39=&gt;点击：选择车辆<br />
+                                2014-11-26 16:24:39=&gt;点击元素集:车牌号节点中的第1个到第4个间的任意一个<br />
+								</p>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with<br/>
+Command duration or timeout: 10 milliseconds<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;e6-56&apos;, ip: &apos;192.168.0.56&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;<br/>
+Session ID: e8b6ae90-41f7-430a-965a-65545c4ddaf8<br/>
+Driver info: org.openqa.selenium.firefox.FirefoxDriver<br/>
+Capabilities [{platform=WINDOWS, acceptSslCerts=true, javascriptEnabled=true, cssSelectorsEnabled=true, databaseEnabled=true, browserName=firefox, handlesAlerts=true, nativeEvents=true, webStorageEnabled=true, rotatable=false, locationContextEnabled=true, applicationCacheEnabled=true, takesScreenshot=true, version=33.1}]</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.lang.reflect.Constructor.newInstance(Constructor.java:526)<br />
+              org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)<br />
+              org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)<br />
+              org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)<br />
+              sun.reflect.GeneratedMethodAccessor31.invoke(Unknown Source)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement$1.invoke(EventFiringWebDriver.java:331)<br />
+              com.sun.proxy.$Proxy12.click(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:344)<br />
+              crazy.seleiumTools.WebBasicPage.clickRandomWebElementFromPartOfList(WebBasicPage.java:305)<br />
+              yly.web.Page.TongJiBaoBiaoPage.selectcar(TongJiBaoBiaoPage.java:131)<br />
+              yly.web.Page.WenDuDongTaiPage.queryWenDuDongTai(WenDuDongTaiPage.java:40)<br />
+              yly.web.testcase.TongTiBaoBiao.seeWenDudongtaimingxi(TongTiBaoBiao.java:31)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)<br />
+              sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.lang.reflect.Method.invoke(Method.java:606)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)<br />
+              org.testng.internal.Invoker.invokeMethod(Invoker.java:714)<br />
+              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)<br />
+              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)<br />
+              org.testng.TestRunner.privateRun(TestRunner.java:767)<br />
+              org.testng.TestRunner.run(TestRunner.java:617)<br />
+              org.testng.SuiteRunner.runTest(SuiteRunner.java:334)<br />
+              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)<br />
+              org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)<br />
+              org.testng.SuiteRunner.run(SuiteRunner.java:240)<br />
+              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br />
+              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)<br />
+              org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)<br />
+              org.testng.TestNG.runSuitesLocally(TestNG.java:1149)<br />
+              org.testng.TestNG.run(TestNG.java:1057)<br />
+              org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)<br />
+              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)<br />
+              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)<br />
+                    <b>Caused by: </b> <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse">org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with<br/>
+Build info: version: &apos;2.44.0&apos;, revision: &apos;76d78cf323ce037c5f92db6c1bba601c2ac43ad8&apos;, time: &apos;2014-10-23 13:11:40&apos;<br/>
+System info: host: &apos;e6-56&apos;, ip: &apos;192.168.0.56&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.7.0_65&apos;<br/>
+Driver info: driver.version: unknown</a><br />
+        <div class="stackTrace" id="exception-1">
+                      &lt;anonymous class&gt;.fxdriver.preconditions.visible(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous2452401759284655307webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:8959:12)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.checkPreconditions_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous2452401759284655307webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11618:15)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous2452401759284655307webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11635:11)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous2452401759284655307webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11640:7)<br />
+                      &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/ADMINI~1/AppData/Local/Temp/anonymous2452401759284655307webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:11582:5)<br />
+                  </div>
+          </div>
+      </td>
+</tr>
+      </table>
+
+
+  <table class="resultsTable">
+    <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
+          <tr>
+        <td colspan="3" class="group">yly.web.testcase.TongTiBaoBiao</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  seeCaoZuoRiZhi
+      </td>
+  <td class="duration">
+    11.777s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+			
+                        2014-11-26 16:19:30=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[操作日志]点击<br />
+                                2014-11-26 16:19:34=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:19:35=&gt;New page title is:易流云平台<br />
+                                2014-11-26 16:19:36=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:19:36=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:19:37=&gt;点击：关闭其他<br />
+                                2014-11-26 16:19:37=&gt;设置开始时间<br />
+                                2014-11-26 16:19:37=&gt;点击：开始时间<br />
+                                2014-11-26 16:19:38=&gt;点击：月编辑框<br />
+                                2014-11-26 16:19:38=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:19:38=&gt;点击：年编辑框<br />
+                                2014-11-26 16:19:38=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:19:38=&gt;日期设置为：1<br />
+                                2014-11-26 16:19:38=&gt;设置结束时间<br />
+                                2014-11-26 16:19:38=&gt;点击：结束时间<br />
+                                2014-11-26 16:19:39=&gt;点击：月编辑框<br />
+                                2014-11-26 16:19:39=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:19:39=&gt;点击：年编辑框<br />
+                                2014-11-26 16:19:39=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:19:39=&gt;日期设置为：30<br />
+                                2014-11-26 16:19:40=&gt;点击：查询<br />
+								
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeChaoWenHuiZong
+      </td>
+  <td class="duration">
+    9.269s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:19:42=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[超温汇总]点击<br />
+                                2014-11-26 16:19:44=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:19:45=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:19:45=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:19:45=&gt;点击：关闭其他<br />
+                                2014-11-26 16:19:45=&gt;点击：更多<br />
+                                2014-11-26 16:19:46=&gt;设置开始时间<br />
+                                2014-11-26 16:19:46=&gt;点击：开始时间<br />
+                                2014-11-26 16:19:46=&gt;点击：月编辑框<br />
+                                2014-11-26 16:19:46=&gt;清空; 在输入: 10<br />
+                                2014-11-26 16:19:46=&gt;点击：年编辑框<br />
+                                2014-11-26 16:19:46=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:19:47=&gt;日期设置为：1<br />
+                                2014-11-26 16:19:47=&gt;设置结束时间<br />
+                                2014-11-26 16:19:47=&gt;点击：结束时间<br />
+                                2014-11-26 16:19:47=&gt;点击：月编辑框<br />
+                                2014-11-26 16:19:47=&gt;清空; 在输入: 10<br />
+                                2014-11-26 16:19:47=&gt;点击：年编辑框<br />
+                                2014-11-26 16:19:48=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:19:48=&gt;日期设置为：30<br />
+                                2014-11-26 16:19:48=&gt;选择车辆<br />
+                                2014-11-26 16:19:48=&gt;点击：选择车辆<br />
+                                2014-11-26 16:19:48=&gt;点击：车牌号节点<br />
+                                2014-11-26 16:19:49=&gt;点击：车牌号节点<br />
+                                2014-11-26 16:19:49=&gt;点击：车牌号节点<br />
+                                2014-11-26 16:19:49=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeChaoWenMingXi
+      </td>
+  <td class="duration">
+    8.405s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:19:51=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[超温明细]点击<br />
+                                2014-11-26 16:19:53=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:19:54=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:19:54=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:19:54=&gt;点击：关闭其他<br />
+                                2014-11-26 16:19:55=&gt;设置开始时间<br />
+                                2014-11-26 16:19:55=&gt;点击：开始时间<br />
+                                2014-11-26 16:19:55=&gt;点击：月编辑框<br />
+                                2014-11-26 16:19:55=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:19:55=&gt;点击：年编辑框<br />
+                                2014-11-26 16:19:55=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:19:56=&gt;日期设置为：1<br />
+                                2014-11-26 16:19:56=&gt;设置结束时间<br />
+                                2014-11-26 16:19:56=&gt;点击：结束时间<br />
+                                2014-11-26 16:19:56=&gt;点击：月编辑框<br />
+                                2014-11-26 16:19:56=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:19:56=&gt;点击：年编辑框<br />
+                                2014-11-26 16:19:56=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:19:57=&gt;日期设置为：30<br />
+                                2014-11-26 16:19:57=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeCheLiangJiaYouJilu
+      </td>
+  <td class="duration">
+    9.908s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:20:00=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[车辆加油记录]点击<br />
+                                2014-11-26 16:20:01=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:20:02=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:20:02=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:20:03=&gt;点击：关闭其他<br />
+                                2014-11-26 16:20:03=&gt;设置开始时间<br />
+                                2014-11-26 16:20:03=&gt;点击：开始时间<br />
+                                2014-11-26 16:20:03=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:03=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:03=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:03=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:04=&gt;日期设置为：1<br />
+                                2014-11-26 16:20:04=&gt;设置结束时间<br />
+                                2014-11-26 16:20:04=&gt;点击：结束时间<br />
+                                2014-11-26 16:20:04=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:04=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:04=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:05=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:05=&gt;日期设置为：30<br />
+                                2014-11-26 16:20:05=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeDingShiGenZong
+      </td>
+  <td class="duration">
+    8.621s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:20:09=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[定时跟踪]点击<br />
+                                2014-11-26 16:20:11=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:20:13=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:20:13=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:20:13=&gt;点击：关闭其他<br />
+                                2014-11-26 16:20:14=&gt;设置开始时间<br />
+                                2014-11-26 16:20:14=&gt;点击：开始时间<br />
+                                2014-11-26 16:20:14=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:14=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:14=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:14=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:14=&gt;日期设置为：1<br />
+                                2014-11-26 16:20:15=&gt;设置结束时间<br />
+                                2014-11-26 16:20:15=&gt;点击：结束时间<br />
+                                2014-11-26 16:20:15=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:15=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:15=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:15=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:15=&gt;日期设置为：10<br />
+                                2014-11-26 16:20:16=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeGuaCheLaYunMingXi
+      </td>
+  <td class="duration">
+    8.156s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:20:18=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[挂车拉运明细]点击<br />
+                                2014-11-26 16:20:20=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:20:21=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:20:21=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:20:21=&gt;点击：关闭其他<br />
+                                2014-11-26 16:20:22=&gt;设置开始时间<br />
+                                2014-11-26 16:20:22=&gt;点击：开始时间<br />
+                                2014-11-26 16:20:22=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:22=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:22=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:22=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:22=&gt;日期设置为：1<br />
+                                2014-11-26 16:20:23=&gt;设置结束时间<br />
+                                2014-11-26 16:20:23=&gt;点击：结束时间<br />
+                                2014-11-26 16:20:23=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:23=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:23=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:23=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:24=&gt;日期设置为：30<br />
+                                2014-11-26 16:20:24=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKaiGuanMenHuiZong
+      </td>
+  <td class="duration">
+    19.574s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:20:26=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[开关门汇总]点击<br />
+                                2014-11-26 16:20:27=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:20:30=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:20:30=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:20:31=&gt;点击：关闭其他<br />
+                                2014-11-26 16:20:31=&gt;设置开始时间<br />
+                                2014-11-26 16:20:31=&gt;点击：开始时间<br />
+                                2014-11-26 16:20:31=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:32=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:32=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:32=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:32=&gt;日期设置为：1<br />
+                                2014-11-26 16:20:32=&gt;设置结束时间<br />
+                                2014-11-26 16:20:32=&gt;点击：结束时间<br />
+                                2014-11-26 16:20:33=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:33=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:33=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:33=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:33=&gt;日期设置为：30<br />
+                                2014-11-26 16:20:33=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKaiGuanMenMingXi
+      </td>
+  <td class="duration">
+    8.964s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:20:46=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[开关门明细]点击<br />
+                                2014-11-26 16:20:49=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:20:50=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:20:50=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:20:50=&gt;点击：关闭其他<br />
+                                2014-11-26 16:20:50=&gt;设置开始时间<br />
+                                2014-11-26 16:20:50=&gt;点击：开始时间<br />
+                                2014-11-26 16:20:51=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:51=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:51=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:51=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:51=&gt;日期设置为：1<br />
+                                2014-11-26 16:20:51=&gt;设置结束时间<br />
+                                2014-11-26 16:20:51=&gt;点击：结束时间<br />
+                                2014-11-26 16:20:52=&gt;点击：月编辑框<br />
+                                2014-11-26 16:20:52=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:20:52=&gt;点击：年编辑框<br />
+                                2014-11-26 16:20:52=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:20:52=&gt;日期设置为：30<br />
+                                2014-11-26 16:20:53=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKongTiaoHuiZong
+      </td>
+  <td class="duration">
+    8.931s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:20:55=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[空调汇总]点击<br />
+                                2014-11-26 16:20:57=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:20:58=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:20:59=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:20:59=&gt;点击：关闭其他<br />
+                                2014-11-26 16:20:59=&gt;设置开始时间<br />
+                                2014-11-26 16:20:59=&gt;点击：开始时间<br />
+                                2014-11-26 16:20:59=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:00=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:00=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:00=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:00=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:00=&gt;设置结束时间<br />
+                                2014-11-26 16:21:00=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:00=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:01=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:01=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:01=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:01=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:01=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeKongTiaoMingXi
+      </td>
+  <td class="duration">
+    8.818s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:04=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[空调明细]点击<br />
+                                2014-11-26 16:21:06=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:21:07=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:21:07=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:21:08=&gt;点击：关闭其他<br />
+                                2014-11-26 16:21:08=&gt;设置开始时间<br />
+                                2014-11-26 16:21:08=&gt;点击：开始时间<br />
+                                2014-11-26 16:21:08=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:09=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:09=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:09=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:09=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:09=&gt;设置结束时间<br />
+                                2014-11-26 16:21:09=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:09=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:10=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:10=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:10=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:10=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:10=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLCD_MingXi
+      </td>
+  <td class="duration">
+    8.131s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:13=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[LCD明细]点击<br />
+                                2014-11-26 16:21:14=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:21:15=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:21:16=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:21:16=&gt;点击：关闭其他<br />
+                                2014-11-26 16:21:16=&gt;设置开始时间<br />
+                                2014-11-26 16:21:16=&gt;点击：开始时间<br />
+                                2014-11-26 16:21:16=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:17=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:17=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:17=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:17=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:17=&gt;设置结束时间<br />
+                                2014-11-26 16:21:17=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:17=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:18=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:18=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:18=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:18=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:18=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLengJiHuiZong
+      </td>
+  <td class="duration">
+    9.277s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:21=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[冷机汇总]点击<br />
+                                2014-11-26 16:21:24=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:21:25=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:21:25=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:21:25=&gt;点击：关闭其他<br />
+                                2014-11-26 16:21:25=&gt;设置开始时间<br />
+                                2014-11-26 16:21:25=&gt;点击：开始时间<br />
+                                2014-11-26 16:21:26=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:26=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:26=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:26=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:26=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:27=&gt;设置结束时间<br />
+                                2014-11-26 16:21:27=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:27=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:27=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:27=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:27=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:27=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:28=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLengJiMingXi
+      </td>
+  <td class="duration">
+    8.723s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:30=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[冷机明细]点击<br />
+                                2014-11-26 16:21:32=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:21:33=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:21:34=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:21:34=&gt;点击：关闭其他<br />
+                                2014-11-26 16:21:34=&gt;设置开始时间<br />
+                                2014-11-26 16:21:34=&gt;点击：开始时间<br />
+                                2014-11-26 16:21:34=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:35=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:35=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:35=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:35=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:35=&gt;设置结束时间<br />
+                                2014-11-26 16:21:35=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:36=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:36=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:36=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:36=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:36=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:36=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLiChengBaoBiao
+      </td>
+  <td class="duration">
+    9.818s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:39=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[里程报表]点击<br />
+                                2014-11-26 16:21:40=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:21:41=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:21:41=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:21:42=&gt;点击：关闭其他<br />
+                                2014-11-26 16:21:42=&gt;设置开始时间<br />
+                                2014-11-26 16:21:42=&gt;点击：开始时间<br />
+                                2014-11-26 16:21:42=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:42=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:42=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:43=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:43=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:44=&gt;设置结束时间<br />
+                                2014-11-26 16:21:44=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:44=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:44=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:44=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:45=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:45=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:46=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeLuQiaoFeiMingXi
+      </td>
+  <td class="duration">
+    7.945s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:48=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[路桥费明细]点击<br />
+                                2014-11-26 16:21:50=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:21:51=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:21:51=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:21:52=&gt;点击：关闭其他<br />
+                                2014-11-26 16:21:52=&gt;设置开始时间<br />
+                                2014-11-26 16:21:52=&gt;点击：开始时间<br />
+                                2014-11-26 16:21:52=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:52=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:52=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:53=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:53=&gt;日期设置为：1<br />
+                                2014-11-26 16:21:53=&gt;设置结束时间<br />
+                                2014-11-26 16:21:53=&gt;点击：结束时间<br />
+                                2014-11-26 16:21:53=&gt;点击：月编辑框<br />
+                                2014-11-26 16:21:53=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:21:53=&gt;点击：年编辑框<br />
+                                2014-11-26 16:21:54=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:21:54=&gt;日期设置为：30<br />
+                                2014-11-26 16:21:54=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seePaiZhaoMingXi
+      </td>
+  <td class="duration">
+    8.284s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:21:56=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[拍照明细]点击<br />
+                                2014-11-26 16:21:58=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:22:00=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:22:00=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:22:00=&gt;点击：关闭其他<br />
+                                2014-11-26 16:22:00=&gt;设置开始时间<br />
+                                2014-11-26 16:22:00=&gt;点击：开始时间<br />
+                                2014-11-26 16:22:01=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:01=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:01=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:01=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:01=&gt;日期设置为：1<br />
+                                2014-11-26 16:22:01=&gt;设置结束时间<br />
+                                2014-11-26 16:22:01=&gt;点击：结束时间<br />
+                                2014-11-26 16:22:02=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:02=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:02=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:02=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:02=&gt;日期设置为：30<br />
+                                2014-11-26 16:22:02=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seePaiZhaoTongJi
+      </td>
+  <td class="duration">
+    5.972s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:22:05=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[拍照统计]点击<br />
+                                2014-11-26 16:22:06=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:22:07=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:22:07=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:22:08=&gt;点击：关闭其他<br />
+                                2014-11-26 16:22:08=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJianXingShiMingXi
+      </td>
+  <td class="duration">
+    20.962s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:22:11=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[区域间行驶明细]点击<br />
+                                2014-11-26 16:22:14=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:22:16=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:22:16=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:22:17=&gt;点击：关闭其他<br />
+                                2014-11-26 16:22:17=&gt;设置开始时间<br />
+                                2014-11-26 16:22:17=&gt;点击：开始时间<br />
+                                2014-11-26 16:22:17=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:17=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:17=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:17=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:18=&gt;日期设置为：1<br />
+                                2014-11-26 16:22:18=&gt;设置结束时间<br />
+                                2014-11-26 16:22:18=&gt;点击：结束时间<br />
+                                2014-11-26 16:22:18=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:18=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:18=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:19=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:19=&gt;日期设置为：30<br />
+                                2014-11-26 16:22:19=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJinChuTongJiCheLiangHuiZong
+      </td>
+  <td class="duration">
+    11.695s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:22:32=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[区域进出统计车辆汇总]点击<br />
+                                2014-11-26 16:22:34=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:22:36=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:22:36=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:22:37=&gt;点击：关闭其他<br />
+                                2014-11-26 16:22:37=&gt;设置开始时间<br />
+                                2014-11-26 16:22:37=&gt;点击：开始时间<br />
+                                2014-11-26 16:22:37=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:37=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:37=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:37=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:38=&gt;日期设置为：1<br />
+                                2014-11-26 16:22:38=&gt;设置结束时间<br />
+                                2014-11-26 16:22:38=&gt;点击：结束时间<br />
+                                2014-11-26 16:22:38=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:38=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:38=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:39=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:39=&gt;日期设置为：30<br />
+                                2014-11-26 16:22:39=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJinChuTongJiMingXi
+      </td>
+  <td class="duration">
+    11.612s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:22:43=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[区域进出统计明细]点击<br />
+                                2014-11-26 16:22:45=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:22:48=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:22:48=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:22:48=&gt;点击：关闭其他<br />
+                                2014-11-26 16:22:48=&gt;设置开始时间<br />
+                                2014-11-26 16:22:48=&gt;点击：开始时间<br />
+                                2014-11-26 16:22:49=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:49=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:49=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:49=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:49=&gt;日期设置为：1<br />
+                                2014-11-26 16:22:50=&gt;设置结束时间<br />
+                                2014-11-26 16:22:50=&gt;点击：结束时间<br />
+                                2014-11-26 16:22:50=&gt;点击：月编辑框<br />
+                                2014-11-26 16:22:50=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:22:50=&gt;点击：年编辑框<br />
+                                2014-11-26 16:22:50=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:22:50=&gt;日期设置为：30<br />
+                                2014-11-26 16:22:51=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeQuYuJinChuTongJiQuYuHuiZong
+      </td>
+  <td class="duration">
+    11.667s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:22:55=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[区域进出统计区域汇总]点击<br />
+                                2014-11-26 16:22:57=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:22:59=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:22:59=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:23:00=&gt;点击：关闭其他<br />
+                                2014-11-26 16:23:00=&gt;设置开始时间<br />
+                                2014-11-26 16:23:00=&gt;点击：开始时间<br />
+                                2014-11-26 16:23:00=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:00=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:00=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:01=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:01=&gt;日期设置为：1<br />
+                                2014-11-26 16:23:01=&gt;设置结束时间<br />
+                                2014-11-26 16:23:01=&gt;点击：结束时间<br />
+                                2014-11-26 16:23:01=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:02=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:02=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:02=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:02=&gt;日期设置为：30<br />
+                                2014-11-26 16:23:02=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeSiJi_IC_XingShiHuiZong
+      </td>
+  <td class="duration">
+    7.877s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:23:07=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[司机IC行驶汇总]点击<br />
+                                2014-11-26 16:23:08=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:23:09=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:23:09=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:23:10=&gt;点击：关闭其他<br />
+                                2014-11-26 16:23:10=&gt;设置开始时间<br />
+                                2014-11-26 16:23:10=&gt;点击：开始时间<br />
+                                2014-11-26 16:23:10=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:10=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:11=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:11=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:11=&gt;日期设置为：1<br />
+                                2014-11-26 16:23:11=&gt;设置结束时间<br />
+                                2014-11-26 16:23:11=&gt;点击：结束时间<br />
+                                2014-11-26 16:23:11=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:12=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:12=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:12=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:12=&gt;日期设置为：30<br />
+                                2014-11-26 16:23:12=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeSiJi_IC_XingShiMingXi
+      </td>
+  <td class="duration">
+    8.469s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:23:14=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[司机IC行驶明细]点击<br />
+                                2014-11-26 16:23:17=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:23:18=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:23:18=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:23:18=&gt;点击：关闭其他<br />
+                                2014-11-26 16:23:18=&gt;设置开始时间<br />
+                                2014-11-26 16:23:18=&gt;点击：开始时间<br />
+                                2014-11-26 16:23:19=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:19=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:19=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:19=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:19=&gt;日期设置为：1<br />
+                                2014-11-26 16:23:19=&gt;设置结束时间<br />
+                                2014-11-26 16:23:19=&gt;点击：结束时间<br />
+                                2014-11-26 16:23:20=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:20=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:20=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:20=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:20=&gt;日期设置为：30<br />
+                                2014-11-26 16:23:21=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeSuDuFenXi
+      </td>
+  <td class="duration">
+    7.777s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:23:23=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[速度分析]点击<br />
+                                2014-11-26 16:23:25=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:23:26=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:23:26=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:23:26=&gt;点击：关闭其他<br />
+                                2014-11-26 16:23:26=&gt;设置开始时间<br />
+                                2014-11-26 16:23:26=&gt;点击：开始时间<br />
+                                2014-11-26 16:23:27=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:27=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:27=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:27=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:27=&gt;日期设置为：1<br />
+                                2014-11-26 16:23:27=&gt;设置结束时间<br />
+                                2014-11-26 16:23:27=&gt;点击：结束时间<br />
+                                2014-11-26 16:23:28=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:28=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:28=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:28=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:28=&gt;日期设置为：10<br />
+                                2014-11-26 16:23:28=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTingCheHuiZongBiao
+      </td>
+  <td class="duration">
+    8.510s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:23:31=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[停车汇总表]点击<br />
+                                2014-11-26 16:23:33=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:23:34=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:23:34=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:23:35=&gt;点击：关闭其他<br />
+                                2014-11-26 16:23:35=&gt;设置开始时间<br />
+                                2014-11-26 16:23:35=&gt;点击：开始时间<br />
+                                2014-11-26 16:23:35=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:35=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:35=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:35=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:36=&gt;日期设置为：1<br />
+                                2014-11-26 16:23:36=&gt;设置结束时间<br />
+                                2014-11-26 16:23:36=&gt;点击：结束时间<br />
+                                2014-11-26 16:23:36=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:36=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:36=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:36=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:37=&gt;日期设置为：30<br />
+                                2014-11-26 16:23:37=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTingCheMingXiBiao
+      </td>
+  <td class="duration">
+    37.272s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:23:39=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[停车明细表]点击<br />
+                                2014-11-26 16:23:41=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:23:42=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:23:43=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:23:43=&gt;点击：关闭其他<br />
+                                2014-11-26 16:23:43=&gt;设置开始时间<br />
+                                2014-11-26 16:23:43=&gt;点击：开始时间<br />
+                                2014-11-26 16:23:43=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:44=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:44=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:44=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:44=&gt;日期设置为：1<br />
+                                2014-11-26 16:23:44=&gt;设置结束时间<br />
+                                2014-11-26 16:23:44=&gt;点击：结束时间<br />
+                                2014-11-26 16:23:45=&gt;点击：月编辑框<br />
+                                2014-11-26 16:23:45=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:23:45=&gt;点击：年编辑框<br />
+                                2014-11-26 16:23:45=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:23:45=&gt;日期设置为：30<br />
+                                2014-11-26 16:23:46=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTouJiaFenLiHuiZong
+      </td>
+  <td class="duration">
+    8.777s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:24:17=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[头架分离汇总]点击<br />
+                                2014-11-26 16:24:19=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:24:20=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:24:20=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:24:21=&gt;点击：关闭其他<br />
+                                2014-11-26 16:24:21=&gt;设置开始时间<br />
+                                2014-11-26 16:24:21=&gt;点击：开始时间<br />
+                                2014-11-26 16:24:21=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:21=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:21=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:21=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:22=&gt;日期设置为：1<br />
+                                2014-11-26 16:24:22=&gt;设置结束时间<br />
+                                2014-11-26 16:24:22=&gt;点击：结束时间<br />
+                                2014-11-26 16:24:22=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:22=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:22=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:22=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:23=&gt;日期设置为：30<br />
+                                2014-11-26 16:24:23=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeTouJiaFenLiMingXi
+      </td>
+  <td class="duration">
+    8.644s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:24:25=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[头架分离明细]点击<br />
+                                2014-11-26 16:24:28=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:24:29=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:24:29=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:24:29=&gt;点击：关闭其他<br />
+                                2014-11-26 16:24:30=&gt;设置开始时间<br />
+                                2014-11-26 16:24:30=&gt;点击：开始时间<br />
+                                2014-11-26 16:24:30=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:30=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:30=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:30=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:30=&gt;日期设置为：1<br />
+                                2014-11-26 16:24:31=&gt;设置结束时间<br />
+                                2014-11-26 16:24:31=&gt;点击：结束时间<br />
+                                2014-11-26 16:24:31=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:31=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:31=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:31=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:31=&gt;日期设置为：30<br />
+                                2014-11-26 16:24:32=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXieHuiHuiZong
+      </td>
+  <td class="duration">
+    9.438s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:24:40=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[卸灰汇总]点击<br />
+                                2014-11-26 16:24:43=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:24:44=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:24:44=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:24:44=&gt;点击：关闭其他<br />
+                                2014-11-26 16:24:45=&gt;设置开始时间<br />
+                                2014-11-26 16:24:45=&gt;点击：开始时间<br />
+                                2014-11-26 16:24:45=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:45=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:45=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:45=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:45=&gt;日期设置为：1<br />
+                                2014-11-26 16:24:46=&gt;设置结束时间<br />
+                                2014-11-26 16:24:46=&gt;点击：结束时间<br />
+                                2014-11-26 16:24:46=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:46=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:46=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:46=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:47=&gt;日期设置为：30<br />
+                                2014-11-26 16:24:47=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXieHuiMingXi
+      </td>
+  <td class="duration">
+    8.531s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:24:49=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[卸灰明细]点击<br />
+                                2014-11-26 16:24:51=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:24:53=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:24:53=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:24:53=&gt;点击：关闭其他<br />
+                                2014-11-26 16:24:53=&gt;设置开始时间<br />
+                                2014-11-26 16:24:53=&gt;点击：开始时间<br />
+                                2014-11-26 16:24:54=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:54=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:54=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:54=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:54=&gt;日期设置为：1<br />
+                                2014-11-26 16:24:54=&gt;设置结束时间<br />
+                                2014-11-26 16:24:54=&gt;点击：结束时间<br />
+                                2014-11-26 16:24:55=&gt;点击：月编辑框<br />
+                                2014-11-26 16:24:55=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:24:55=&gt;点击：年编辑框<br />
+                                2014-11-26 16:24:55=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:24:55=&gt;日期设置为：30<br />
+                                2014-11-26 16:24:55=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXingShiTongJiHuiZong
+      </td>
+  <td class="duration">
+    7.997s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:24:58=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[行驶统计汇总]点击<br />
+                                2014-11-26 16:25:00=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:01=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:01=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:01=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:01=&gt;设置开始时间<br />
+                                2014-11-26 16:25:01=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:02=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:02=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:02=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:02=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:02=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:02=&gt;设置结束时间<br />
+                                2014-11-26 16:25:02=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:03=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:03=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:03=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:03=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:03=&gt;日期设置为：30<br />
+                                2014-11-26 16:25:03=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeXingShiTongJiMingXi
+      </td>
+  <td class="duration">
+    7.839s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:25:06=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[行驶统计明细]点击<br />
+                                2014-11-26 16:25:07=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:08=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:08=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:09=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:09=&gt;设置开始时间<br />
+                                2014-11-26 16:25:09=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:09=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:09=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:09=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:10=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:10=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:10=&gt;设置结束时间<br />
+                                2014-11-26 16:25:10=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:10=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:10=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:10=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:11=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:11=&gt;日期设置为：10<br />
+                                2014-11-26 16:25:11=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYeYaHuiZong
+      </td>
+  <td class="duration">
+    8.872s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:25:14=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[液压汇总]点击<br />
+                                2014-11-26 16:25:16=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:17=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:17=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:18=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:18=&gt;设置开始时间<br />
+                                2014-11-26 16:25:18=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:18=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:18=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:18=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:19=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:19=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:19=&gt;设置结束时间<br />
+                                2014-11-26 16:25:19=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:19=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:19=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:19=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:20=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:20=&gt;日期设置为：30<br />
+                                2014-11-26 16:25:20=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYeYaMingXi
+      </td>
+  <td class="duration">
+    8.595s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:25:22=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[液压明细]点击<br />
+                                2014-11-26 16:25:24=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:26=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:26=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:26=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:27=&gt;设置开始时间<br />
+                                2014-11-26 16:25:27=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:27=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:27=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:27=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:27=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:27=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:28=&gt;设置结束时间<br />
+                                2014-11-26 16:25:28=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:28=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:28=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:28=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:28=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:28=&gt;日期设置为：30<br />
+                                2014-11-26 16:25:29=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYouChiPanDuanYouHaoFenXi
+      </td>
+  <td class="duration">
+    14.086s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:25:31=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[油尺判断油耗分析]点击<br />
+                                2014-11-26 16:25:33=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:34=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:34=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:34=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:34=&gt;设置开始时间<br />
+                                2014-11-26 16:25:34=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:35=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:35=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:35=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:35=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:35=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:35=&gt;设置结束时间<br />
+                                2014-11-26 16:25:35=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:36=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:36=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:36=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:36=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:36=&gt;日期设置为：30<br />
+                                2014-11-26 16:25:37=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeYouLiangDongTaiBiao
+      </td>
+  <td class="duration">
+    8.836s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:25:45=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[油量动态表]点击<br />
+                                2014-11-26 16:25:47=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:48=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:48=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:49=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:49=&gt;设置开始时间<br />
+                                2014-11-26 16:25:49=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:49=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:49=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:49=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:49=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:50=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:50=&gt;设置结束时间<br />
+                                2014-11-26 16:25:50=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:51=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:51=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:51=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:51=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:51=&gt;日期设置为：30<br />
+                                2014-11-26 16:25:51=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  seeZhiLingMingXi
+      </td>
+  <td class="duration">
+    7.945s
+  </td>
+  <td class="result">
+        
+    
+            <div class="testOutput">
+                        2014-11-26 16:25:54=&gt;移动鼠标到[统计报表]中心后点击，鼠标悬停，随后找到[指令明细]点击<br />
+                                2014-11-26 16:25:56=&gt;跳转到新页面：易流云平台<br />
+                                2014-11-26 16:25:57=&gt;右键关闭其他统计报表TAB标签<br />
+                                2014-11-26 16:25:57=&gt;右键点击[当前激活报表标签] 找到[关闭其他]<br />
+                                2014-11-26 16:25:57=&gt;点击：关闭其他<br />
+                                2014-11-26 16:25:57=&gt;设置开始时间<br />
+                                2014-11-26 16:25:57=&gt;点击：开始时间<br />
+                                2014-11-26 16:25:58=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:58=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:58=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:58=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:58=&gt;日期设置为：1<br />
+                                2014-11-26 16:25:59=&gt;设置结束时间<br />
+                                2014-11-26 16:25:59=&gt;点击：结束时间<br />
+                                2014-11-26 16:25:59=&gt;点击：月编辑框<br />
+                                2014-11-26 16:25:59=&gt;清空; 在输入: 6<br />
+                                2014-11-26 16:25:59=&gt;点击：年编辑框<br />
+                                2014-11-26 16:25:59=&gt;清空; 在输入: 2014<br />
+                                2014-11-26 16:25:59=&gt;日期设置为：30<br />
+                                2014-11-26 16:26:00=&gt;点击：查询<br />
+                  </div>
+    
+
+      </td>
+</tr>
+      </table>
+  
+</body>
+</html>
