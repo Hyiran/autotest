@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="$messages.locale.language" lang="$messages.locale.language">
+<head>
+  <title>$meta.reportTitle - $messages.getString("overview")</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="reportng.css" rel="stylesheet" type="text/css" />
+  #if ($meta.stylesheetPath)
+  <link href="custom.css" rel="stylesheet" type="text/css" />
+  #end
+   <script src="jquery-1.11.1.min.js"></script>
+   <script src="dist/echarts.js"></script>
+   <script type="text/javascript" src="reportng.js"></script>
+</head>
+<body>
+<div id="meta">
+  $messages.getString("generatedBy")
+  $messages.getString("atTime") $meta.reportTime $messages.getString("onDate") $meta.reportDate
+  <br /><span id="systemInfo">$meta.user&nbsp;/&nbsp;$meta.javaInfo&nbsp;/&nbsp;$meta.platform</span>
+</div>
+
+<h1>$meta.reportTitle</h1>
+#if (!$utils.allOutput.empty)
+  <p>
+    <a href="output.html">$messages.getString("logOutput")</a>
+    #if ($meta.coverageLink)
+      &#183; <a href="$meta.coverageLink" target="_top">$messages.getString("coverageReport")</a>
+    #end
+  </p>
+#end
+
+#foreach ($suite in $suites)
+<div class = "divcss" >
+<table class="overviewTable">
+  #set ($suiteId = $velocityCount)
+  #set ($totalTests = 0)
+  #set ($totalPassed = 0)
+  #set ($totalSkipped = 0)
+  #set ($totalFailed = 0)
+  <tr>
+    <th colspan="6" class="header suite">
+      <div class="suiteLinks">
+        #if (!$suite.invokedMethods.empty)
+        ##<a href="suite${suiteId}_chronology.html">$messages.getString("chronology")</a>
+        #end
+        #if ($utils.hasGroups($suite))
+        <a href="suite${suiteId}_groups.html">$messages.getString("groups")</a>
+        #end        
+      </div>
+      ${suite.name}
+    </th>
+  </tr>
+  <tr class="columnHeadings">
+    <td>&nbsp;</td>
+    <th>$messages.getString("duration")</th>
+    <th>$messages.getString("passed")</th>
+    <th>$messages.getString("skipped")</th>
+    <th>$messages.getString("failed")</th>
+    <th>$messages.getString("passRate")</th>
+  </tr>
+  #foreach ($result in $suite.results)
+  #set ($notPassedTests = $result.testContext.skippedTests.size() + $result.testContext.failedTests.size())
+  #set ($total = $result.testContext.passedTests.size() + $notPassedTests)
+  #set ($totalTests = $totalTests + $total)
+  #set ($totalPassed = $totalPassed + $result.testContext.passedTests.size())
+  #set ($totalSkipped = $totalSkipped + $result.testContext.skippedTests.size())
+  #set ($totalFailed = $totalFailed + $result.testContext.failedTests.size())
+  #set ($failuresExist = $result.testContext.failedTests.size()>0 || $result.testContext.failedConfigurations.size()>0)
+
+  #if (($onlyReportFailures && $failuresExist) || (!$onlyReportFailures))
+  <tr class="test">
+    <td class="test">
+      <a href="suite${suiteId}_test${velocityCount}_results.html">${result.testContext.name}</a>
+    </td>
+    <td class="duration">
+      $utils.formatDuration($utils.getDuration($result.testContext))s
+    </td>
+
+    #if ($result.testContext.passedTests.size() > 0)
+    <td class="passed number">$result.testContext.passedTests.size()</td>
+    #else
+    <td class="zero number">0</td>
+    #end
+
+    #if ($result.testContext.skippedTests.size() > 0)
+    <td class="skipped number">$result.testContext.skippedTests.size()</td>
+    #else
+    <td class="zero number">0</td>
+    #end
+
+    #if ($result.testContext.failedTests.size() > 0)
+    <td class="failed number">$result.testContext.failedTests.size()</td>
+    #else
+    <td class="zero number">0</td>
+    #end
+
+    <td class="passRate">
+      #if ($total > 0)
+      #set ($passRate = (($total - $notPassedTests) * 100 / $total))
+      $passRate%
+      #else
+      $messages.getString("notApplicable")
+      #end
+    </td>
+  </tr>
+  #end
+  #end
+
+    <tr class="suite">
+    <td colspan="2" class="totalLabel">$messages.getString("total")</td>
+
+    #if ($totalPassed > 0)
+    <td class="passed number">$totalPassed</td>
+    #else
+    <td class="zero number">0</td>
+    #end
+
+    #if ($totalSkipped > 0)
+    <td class="skipped number">$totalSkipped</td>
+    #else
+    <td class="zero number">0</td>
+    #end
+
+    #if ($totalFailed > 0)
+    <td class="failed number">$totalFailed</td>
+    #else
+    <td class="zero number">0</td>
+    #end
+
+    <td class="passRate suite">
+      #if ($totalTests > 0)
+      #set ($passRate = (($totalTests - $totalSkipped - $totalFailed) * 100 / $totalTests))
+      $passRate%
+      #else
+      $messages.getString("notApplicable")
+      #end
+    </td>
+
+  </tr>
+</table>
+   <div id="echarttesttime${suite.name}" style="height:300px ; width: 50%;float:left"  > </div>
+ <div id="echarttestresult${suite.name}" style="height:300px;width: 50%;float:left" ></div>
+
+ 
+ 
+ 
+ 
+ 
+ <script type="text/javascript">
+
+//图形大小
+	var r='80';
+	var centerx='50%';
+    var centery='50%';
+       // 路径配置
+    require.config({
+            paths:  {
+                echarts: 'dist'
+			}
+	});   
+	
+	//饼图脚本=====================================
+	 require(
+				[
+					'echarts',
+					'echarts/chart/pie'// 使用柱状图就加载bar模块，按需加载
+				],
+     function (ec) {
+                 // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('echarttestresult${suite.name}')); 
+                //通过颜色
+var pcolorList = [
+   '#33FF00','#33FF99'
+];
+
+//失败颜色
+var fcolorList = [
+   '#FF0000','#FF0099'
+];
+//跳过颜色
+var scolorList = [
+   '#FFFF00','#FFFFCC'
+];          
+                var option = {				
+     //鼠标浮窗提示
+	tooltip : {
+        show: true,
+        formatter: "{a} <br/>{b} : 用例数 {c} "
+    },
+  //图例
+    legend: {
+        orient : 'horizontal',
+        x : 'left',
+		 y:'bottom' , 
+        data:['成功','失败','跳过']
+    },
+    //工具栏
+    toolbox: {
+        show : true,
+        feature : {
+            dataView : {show: true, readOnly: false},
+		magicType: {
+        show : true,       
+        type : [ ]
+    },
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+	//统计
+    series : [
+        {
+            name:'执行情况汇总',
+            type:'pie',
+			//中心位置
+            center : [centerx,centery],
+			selectedMode: 'single',
+		//大小
+            radius : r*0.6,
+            itemStyle : {
+                normal : {
+                    label : {
+                    	 show : true,
+                        position : 'inner',
+                        formatter : function (a,b,c,d) {return b+'\n'+c+'  '+  (d - 0).toFixed(0) + '%'},
+						textStyle: {
+										 color: '#0000FF'
+								   }
+                    },
+                    labelLine : {
+                        show : false
+                    }
+                },
+                emphasis : {
+                    label : {
+                        show : true,
+                        formatter : "{b}\n{d}%",
+						textStyle: {
+										 color: '#0000FF'
+								   }
+                    }
+                }           
+            },
+            data:[
+				  #if ($totalPassed > 0)
+                {value:$totalPassed, name:'成功',itemStyle : { normal : { color: '#66FF33' },emphasis : {color: '#99FF00'}} },
+				#end
+				 #if ($totalFailed > 0)
+                {value:$totalFailed, name:'失败',itemStyle : { normal : { color: '#FF6633' },emphasis : {color: '#FF3366'}} },
+				#end
+				  #if ($totalSkipped > 0)
+                {value:$totalSkipped, name:'跳过',itemStyle : { normal : { color: '#FFFF33' },emphasis : {color: '#FFFF33'}} }
+				#end
+            ],
+				markPoint : {
+					symbol:'diamond'  ,
+					
+					data : [
+						{name :'用例总数', value : $totalTests, x:'10%', y:40, symbolSize:20,
+						
+						effect :{
+									show: true, 
+									loop: true, 
+									period: 15, 
+									scaleSize : 1, 
+									color : null, 
+									shadowColor : null, 
+									shadowBlur : 0 
+								
+								},
+					itemStyle : { normal : { color: '#330099'},emphasis : { label : {}}}
+						}
+					]
+				 }
+  
+				
+        },
+			//tests统计
+        {
+            name:'用例分集统计',
+            type:'pie',
+            center : [centerx, centery],
+            radius : [r*0.65, r],
+			itemStyle : {
+                normal : {
+                    label : {
+						 show : false,
+                        position : 'inner',
+                        formatter : function (a,b,c,d) {return b+'\n'+c+'  '+(d - 0).toFixed(0) + '%'}
+                    },
+                    labelLine : {
+                        show : false
+                    }
+                },
+                emphasis : {
+                    label : {
+                        show : true,
+                        formatter : "{b}\n{d}%",
+						textStyle: {
+							 color: '#0000FF'
+								   }
+                    }
+                }
+                
+            },
+            data:[
+            
+             #foreach ($result in $suite.results)
+             	 #if ($result.testContext.passedTests.size() > 0)
+  					 {value:$result.testContext.passedTests.size(), name:'${result.testContext.name}',
+  					 itemStyle : { normal : {color:function(p){return pcolorList[p.dataIndex%2]} }}
+  					 },
+   				 #end
+             #end
+             
+             #foreach ($result in $suite.results)
+             	 #if ($result.testContext.failedTests.size() > 0)
+  					 {value:$result.testContext.failedTests.size(), name:'${result.testContext.name}',
+  					 itemStyle : { normal : {color:function(p){return fcolorList[p.dataIndex%2]} }}
+  					 },
+   				 #end
+             #end
+             
+             #foreach ($result in $suite.results)
+             	 #if ($result.testContext.skippedTests.size() > 0)
+  					 {value:$result.testContext.skippedTests.size(), name:'${result.testContext.name}',
+  					 itemStyle : { normal : {color:function(p){return scolorList[p.dataIndex%2]} }}
+  					 },
+   				 #end
+             #end               
+            ]
+  
+        },
+        			//case类组统计
+        {
+            name:'case类组统计',
+            type:'pie',
+            center : [centerx, centery],
+            radius : [r, r*1.25],
+			itemStyle : {
+                normal : {
+                    label : {
+						 show : true,
+                        position : 'outer',
+                        formatter : function (a,b,c,d) {return b+' '+'\n'+c+'     '+(d - 0).toFixed(0) + '%'},
+						textStyle: {
+							 color: '#0000FF'
+								   }
+                    },
+                    labelLine : {
+                        show : true
+                    }
+                }
+                             
+            },
+            data:[
+            
+                    
+            
+  #foreach ($resultvalues in $suite.results.values())
+ 	 #if ($resultvalues.testContext.passedTests.size() > 0) 	 
+					#foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.passedTests).keySet())
+					 #set ($classResults = $htmlreporter.sortByTestClass($resultvalues.testContext.passedTests).get($testClass))
+						#if($classResults.size()>0)						
+{value: $classResults.size(), name:'$testClass.name',itemStyle : { normal : {color:function(p){return pcolorList[p.dataIndex%2]} }}},
+						#end
+ 					#end
+ 				 #end
+ #end
+ 
+ #foreach ($resultvalues in $suite.results.values())
+ 	 #if ($resultvalues.testContext.failedTests.size() > 0)
+ 		#foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.failedTests).keySet())
+	 		 #set ($classResults = $htmlreporter.sortByTestClass($resultvalues.testContext.failedTests).get($testClass))
+						#if($classResults.size()>0)						
+{value: $classResults.size(), name:'$testClass.name',itemStyle : { normal : {color:function(p){return fcolorList[p.dataIndex%2]} }}},
+						#end
+ 					#end
+					
+ 	#end
+ #end
+ 
+ #foreach ($resultvalues in $suite.results.values())
+ 	 #if ($resultvalues.testContext.skippedTests.size() > 0)
+ 		 #foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.skippedTests).keySet()) 		
+ 		#set ($classResults =$htmlreporter.sortByTestClass($resultvalues.testContext.skippedTests).get($testClass))
+						#if($classResults.size()>0)
+{value: $classResults.size(), name:'$testClass.name',itemStyle : { normal : {color:function(p){return scolorList[p.dataIndex%2]} }}},
+						#end
+ 					#end
+ 				 #end
+ #end 
+				]
+
+			}
+		 ]// series : end
+};//option end
+
+
+              // 为echarts对象加载数据 
+                myChart.setOption(option); 
+				window.onresize = myChart.resize 
+            }//function (ec) end
+        );// 饼图require end==========================================================================
+
+
+require(
+				[
+					'echarts',
+					'echarts/chart/bar'// 使用柱状图就加载bar模块，按需加载
+				],
+     function (ec) {
+                 // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('echarttesttime${suite.name}')); 
+          
+                var option = {
+    title: {
+        x: 'center',
+        text: '测试用例执行时间统计',
+      
+    },
+    tooltip: {
+        trigger: 'item',
+        position:['',25],
+		formatter :function ( p ) { 
+			ch = new Array;
+			ch = p.name.split('||||');
+			return '<div style="white-space:normal">'+ch[0]+'<br/>'+ch[1]+': '+p.value+'秒'+'</div>'}
+    },
+    toolbox: {
+        show: true,
+        feature: {
+            dataView: {show: true, readOnly: false},
+            restore: {show: true},
+            saveAsImage: {show: true}
+        }
+    },
+    calculable: true,
+    grid: {
+        borderWidth: 0,
+        y: 80,
+        y2: 60
+    },
+    xAxis: [
+        {
+            type: 'category',
+            show: false,
+          axisLabel:{rotate:'-90',},
+		  splitLine :{show:false},
+            data: [          
+##获取所有测试通过的方法名
+#foreach ($resultvalues in $suite.results.values())
+ 	 	#if ($resultvalues.testContext.passedTests.size() > 0) 	 
+			#foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.passedTests).keySet())
+					#set ($classResults = $htmlreporter.sortByTestClass($resultvalues.testContext.passedTests).get($testClass))
+						#if($classResults.size()>0)						
+							#foreach ($testResult in $classResults)							
+	#set ($testInstanceName = "")
+    #if ($testResult.testName)
+      #set ($testInstanceName = " ($testResult.testName)")
+    #end
+    #if ($testResult.method.description && $testResult.method.description.length() > 0)
+      '类$testClass.name中||||通过的方法:$testResult.method.description',   
+    #else
+      '类$testClass.name中||||通过的方法:$testResult.name$testInstanceName',
+    #end							
+							
+							#end
+						#end
+ 			#end
+ 		#end
+#end
+
+#if($totalFailed>0)
+## 通过与未通过间的分隔
+'',
+#end
+
+##获取所有测试未通过的方法名
+#foreach ($resultvalues in $suite.results.values())
+ 	 	#if ($resultvalues.testContext.failedTests.size() > 0) 	 
+			#foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.failedTests).keySet())
+					#set ($classResults = $htmlreporter.sortByTestClass($resultvalues.testContext.failedTests).get($testClass))
+						#if($classResults.size()>0)						
+							#foreach ($testResult in $classResults)							
+	#set ($testInstanceName = "")
+    #if ($testResult.testName)
+      #set ($testInstanceName = " ($testResult.testName)")
+    #end
+    #if ($testResult.method.description && $testResult.method.description.length() > 0)
+      '类$testClass.name中||||失败的方法:$testResult.method.description',   
+    #else
+      '类$testClass.name中||||失败的方法:$testResult.name$testInstanceName',
+    #end							
+							
+							#end
+						#end
+ 			#end
+ 		#end
+#end
+
+
+            
+            ]
+        }
+    ],
+    yAxis: [
+        {
+            type: 'value',
+            show: true,
+            splitNumber :5
+        }
+    ],
+    series: [
+        {
+            name: '执行时间统计',
+            type: 'bar',
+            itemStyle: {
+                normal: {
+                    color: function(params) {
+                        // build a color map as your need.
+                        var colorList = [
+                          '#C1232B','#B5C334','#FCCE10','#E87C25','#27727B',
+                           '#FE8463','#9BCA63','#FAD860','#F3A43B','#60C0DD',
+                           '#D7504B','#C6E579','#F4E001','#F0805A','#26C0C0'
+                        ];
+                        return colorList[params.dataIndex%15]
+                    },
+                    label: {
+                        show: false,
+                        position: 'top',
+                        formatter: '{c}'
+                    }
+                }
+            },
+            data: [
+ ##获取所有测试通过的方法时间
+#foreach ($resultvalues in $suite.results.values())
+ 	 	#if ($resultvalues.testContext.passedTests.size() > 0) 	 
+			#foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.passedTests).keySet())
+					#set ($classResults = $htmlreporter.sortByTestClass($resultvalues.testContext.passedTests).get($testClass))
+						#if($classResults.size()>0)						
+							#foreach ($testResult in $classResults)							
+$utils.formatDuration($testResult.startMillis, $testResult.endMillis),
+							
+							#end
+						#end
+ 			#end
+ 		#end
+#end
+
+#if($totalFailed>0)
+## 通过与未通过间的分隔
+'',
+#end
+
+##获取所有测试未通过的方法时间
+#foreach ($resultvalues in $suite.results.values())
+ 	 	#if ($resultvalues.testContext.failedTests.size() > 0) 	 
+			#foreach ($testClass in $htmlreporter.sortByTestClass($resultvalues.testContext.failedTests).keySet())
+					#set ($classResults = $htmlreporter.sortByTestClass($resultvalues.testContext.failedTests).get($testClass))
+						#if($classResults.size()>0)						
+							#foreach ($testResult in $classResults)							
+$utils.formatDuration($testResult.startMillis, $testResult.endMillis),						
+							
+							#end
+						#end
+ 			#end
+ 		#end
+#end
+            
+            
+            
+            
+            
+            ]
+            
+            
+        }
+    ]
+};
+                    
+                    //option end
+
+
+              // 为echarts对象加载数据 
+                myChart.setOption(option); 
+				window.onresize = myChart.resize 
+            }//function (ec) end
+        );// 柱状图require end============================================
+
+    </script>
+</div>
+#end
+</body>
+</html>
